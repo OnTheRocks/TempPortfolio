@@ -1,24 +1,22 @@
-import { FaAlignRight } from 'react-icons/fa';
-import React, { Component } from 'react';
-
 const Navbar = () => {
-
   return (
-    <div className="navBar">
-                    {/* <button onClick={this.Toggle}>
-                        <FaAlignRight />
-                    </button> */}
-                    <ul className="">
-                        <li href="#">Home</li>
-                        <li href="#">About me</li>
-                        <li href="#">Contact</li>
-                    </ul>
-              </div>
+    <nav className="navbar navbar-right  navbar-expand-lg navbar-dark bg-dark">
+      <div className="container-fluid ">
+        <a className="navbar-brand" href="#">Navbar</a>
+        <button className="navbar-toggler " type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+          <span className="navbar-toggler-icon"></span>
+        </button>
+        <div className="collapse navbar-collapse " id="navbarNavAltMarkup">
+          <div className="navbar-nav ">
+            <a className="nav-link active" aria-current="page" href="#">Home</a>
+            <a className="nav-link" href="#">About Me</a>
+            <a className="nav-link" href="#">Portfolio</a>
+            <a className="nav-link" href="#">Contact</a>            
+          </div>
+        </div>
+      </div>
+    </nav>
   )
 }
 
 export default Navbar
-
-
-
-{/* <ul className={this.state.toggle ? "nav-links show-nav" : "nav-links"}> */}
